@@ -9,13 +9,24 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onDebugStart",
+    "onDebugStop",
+    "onDebugResolve"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "stackrecorder.helloWorld",
-        "title": "Hello World"
+        "command": "stackrecorder.recordDebugFrames",
+        "title": "Record Debug Frames"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "stackrecorder.recordDebugFrames",
+        "key": "shift+f1",
+        "when": "debuggersAvailable"
       }
     ]
   },
