@@ -40,7 +40,7 @@ async function recordFramesAndVariables(session: vscode.DebugSession) {
             }
             const frameData: any = {
                 name: frame.name,
-                source: frame.source?.path || 'unknown',
+                source: frame.source?.path,
                 line: frame.line,
                 variables: await recordVariables(session, frame.id)
             };

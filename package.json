@@ -3,6 +3,7 @@
   "displayName": "StackRecorder",
   "description": "record frames and variables in debug session",
   "version": "0.0.1",
+  "publisher": "jingchenwang",
   "engines": {
     "vscode": "^1.95.0"
   },
